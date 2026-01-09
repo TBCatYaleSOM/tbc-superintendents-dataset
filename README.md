@@ -52,7 +52,7 @@ The code proceeds as follows:
 
 ## Data sources
 
-All files are from state websites or public information requests. Raw files extracted are stored in data/raw/. See "The Broad Center Data Extension Notes.xlsx" for details on data sourcing. 
+All files are from state websites or public information requests. Raw files are stored in data/raw/. See "The Broad Center Data Extension Notes.xlsx" for details on data sourcing. 
 
 ## Benchmarking and known issues
 See output/TBC_supt_memo_Jan_9_2026.pdf for descriptive statistics, comparisons to other published work on superintendents, and a list of known issues. 

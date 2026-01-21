@@ -1,5 +1,5 @@
 # Superintendent research database
-# V1, 2026-01-09
+# V1, 2026-01-21
 
 
 # Contributors: Sam Stemper, Ariel Gelrud, Cameron Greene, Seth Zimmerman
@@ -18,7 +18,7 @@ We welcome contributions from users. If you would like to contribute superintend
 
 These data come from public records. You are welcome to use them. Please do so with the following citation: 
 
-Stemper, Sam and The Broad Center. Superintendent Research Dataset (v1, 2026-01-09), 2026. 
+Stemper, Sam and The Broad Center. Superintendent Research Dataset (v1, 2026-01-21), 2026. 
 
 ## Contents
 
@@ -38,7 +38,7 @@ The dataset contains eight variables.
 -name_clean: name data in standardized format
 -year: the fall of the academic year in which the superintendent data was recorded. 
 -salary: superintendent salary in dollars. Not available for all states. 
--super_id: within-state superintendent panel identifier. This identifier is obtained by matching superintendents by name within states.
+-super_id: within-state superintendent individual identifier. This identifier is obtained by matching superintendents by name within states. Note this may contain false positives.
 
 
 ## Code
@@ -52,10 +52,11 @@ The code proceeds as follows:
 
 ## Data sources
 
-All files are from state websites or public information requests. Raw files are stored in data/raw/. See "The Broad Center Data Extension Notes.xlsx" for details on data sourcing. 
+All files are from state websites. Raw files extracted from these websites are stored in data/raw/. See "The Broad Center Data Extension Notes.xlsx" for details on data sourcing. 
 
 ## Benchmarking and known issues
-See output/TBC_supt_memo_Jan_9_2026.pdf for descriptive statistics, comparisons to other published work on superintendents, and a list of known issues. 
+
+See output/TBC_supt_memo_Jan_21_2026.pdf for descriptive statistics, comparisons to other published work on superintendents, and a list of known issues. 
 
 ## References
 

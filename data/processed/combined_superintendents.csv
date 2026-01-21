@@ -1,4 +1,4 @@
-"id","state","leaid","leaid_name","name_raw","name_clean","year","charter","salary"
+"super_id","state","leaid","leaid_name","name_raw","name_clean","year","charter","salary"
 "ar00001","ar","0500001","Dewitt School District","WAYMAN, ROY G.","roy wayman",2007,"No charter schools",NA
 "ar00002","ar","0500001","Dewitt School District","WAYMAN, ROY G.","roy wayman",2008,"No charter schools",NA
 "ar00003","ar","0500001","Dewitt School District","WAYMAN, ROY G.","roy wayman",2009,"No charter schools",NA

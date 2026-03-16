@@ -12,7 +12,7 @@ We plan to update these data once per year. When updating, we will maintain copi
 
 We plan to add additional states as those data become available.  
 
-We welcome contributions from users. If you would like to contribute superintendent data from other states or years, or if you notice an issue with the data or code, please contact us at broadcenter@yale.edu. 
+We welcome contributions from users. If you would like to contribute superintendent data from other states or years, or if you notice an issue with the data or code, please contact us at broad.data@yale.edu. 
 
 ## Use 
 

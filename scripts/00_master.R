@@ -15,8 +15,14 @@ install.packages("educationdata")
 install.packages("stargazer")
 install.packages("zoo")
 
-# 2. (Optional) By default, these scripts use processed .Rda files. If you would like to generate the data "from scratch," change "read_PDFs <- 1" in the following line.    
+# 2. (Optional) By default, these scripts use processed .Rda files. 
+#    If you would like to generate the data "from scratch," change "read_PDFs <- 1" in the following line.
 read_PDFs <- 1
+
+# 3. (Optional) Assign cross-state global_ids using confirmed disambiguation matches.
+#    Requires Python and produces combined_superintendents_global.csv.
+#    Change to 1 to enable.
+assign_global_ids <- 0
 
 if (!require("here")) install.packages("here")
 library(here)
@@ -41,4 +47,17 @@ scripts <- c(
 for (script in scripts) {
   cat("Running:", script, "\n")
   source(here::here(script), echo = TRUE)
+  if (assign_global_ids == 1 && script == "scripts/02_run_all.R") {
+    cat("Running: scripts/04_assign_global_ids.py\n")
+    exit_code <- system2(
+      "python",
+      args   = here::here("scripts/04_assign_global_ids.py"),
+      stdout = "",
+      stderr = ""
+    )
+    if (exit_code != 0) {
+      stop("04_assign_global_ids.py failed with exit code ", exit_code,
+           ". Check Python installation and that combined_superintendents.csv exists.")
+    }
+  }
 }

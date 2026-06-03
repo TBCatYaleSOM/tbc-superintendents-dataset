@@ -1,6 +1,6 @@
 # Superintendent Disambiguation Tool
 
-Determines whether two superintendent records with the same name represent the same person or different people. Uses an LLM agent with web search tools (Tavily, Wayback Machine) to find evidence connecting superintendent tenures across districts, then applies an adversarial critic to validate the results.
+Determines whether two superintendent records with the same name represent the same person or different people. Uses an LLM agent with web search tools (Tavily, Wayback Machine) to find evidence connecting superintendent tenures across districts, then applies an adversarial critic to validate the results. We thank Kyle Jensen for his contributions to developing this tool. 
 
 ## Setup
 
